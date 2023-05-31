@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../primeflex.css">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/hyperspace-race-variable#fonts-section">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="../assets/Logo-oficial.png" alt="Logo portafolio" width="100" height="100">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Semana 3</li>
+                    <li onclick="scrollToSection('about2')">Definiciones</li>
+                    <li onclick="scrollToSection('services')">Actividades</li>
+                    <li onclick="scrollToSection('contact1')">Reflexión</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="../index.html#portafolio" aria-label="Enviar mensaje al correo"
+                    class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Portafolio</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl" id="tit1">Programación Front-End JavaScript, Lenguaje JavaScript</h1>
+                    <p class="text-gray-500">Durante la tercera semana, me centré en la programación front-end con JavaScript. Aprendí sobre la sintaxis de JavaScript, sus tipos de datos, como números, strings y booleanos, y cómo se usan para crear lógica y funcionalidad en las páginas web.
+
+                        Estudié los objetos en JavaScript, aprendiendo cómo se definen, cómo se usan y cómo se pueden modificar con métodos. También adquirí conocimientos sobre funciones y las más recientes funciones flecha, que proporcionan una sintaxis más corta y flexible.
+                        
+                        Además, exploré la creación de gráficos con JavaScript, utilizando librerías como Chart.js para representar datos de forma visual y dinámica.</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p id="aprend">Conceptos clave: JavaScript, Números, Strings, Objetos y Métodos, Booleanos, Funciones, Funciones Flecha y Gráficos</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="../assets/dw1.jpeg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <!--ABOUT ME-->
+        <section id="about2" class="about__me2 w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="../assets/javascript.png" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Definiciones</h1>
+                    <p class="text-gray-500">Algunas de las definiciones de los temas que se abarcaron en la segunda semana fueron los siguientes:</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>JavaScript: Es un lenguaje de programación que se utiliza principalmente para agregar interactividad y dinamismo a las páginas web en el lado del cliente (front-end).</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Números, Strings y Booleanos: Son tipos de datos fundamentales en JavaScript. Los números representan valores numéricos, las strings representan secuencias de caracteres y los booleanos representan valores verdaderos o falsos.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Objetos y Métodos: En JavaScript, un objeto es una entidad independiente con propiedades y tipos. Un método es una función asociada a un objeto.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Funciones y Funciones Flecha: Una función es un bloque de código diseñado para realizar una tarea particular. Una función flecha es una forma más corta de declarar funciones en JavaScript, introducida en ES6.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </div>
+    <!--Introducción -->
+    <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">ACTIVIDADES DESARROLLADAS</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Esta semana, desarrollé ejercicios que utilizan JavaScript para proporcionar interactividad. Utilicé números, strings y booleanos para manipular datos, y creé objetos para organizar estos datos de manera más eficiente.
+
+Implementé varias funciones para encapsular bloques de código. 
+
+Como resultado, pude desarrollar algunos ejercicios que me sirvieron para comprender las funcionalidades de JavaScript cono Números, Strings, Objetos y Métodos, Booleanos, Funciones.
+
+                </p>
+            </div>
+            <div class="services__card w-full align-items-center grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 md:col-6 gap-3 p-2"  id="card">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+                <div class=""  id="card">                    
+                    <div class="image col p-0 mt-6 md:mt-0">
+                        <img src="../assets/js.png" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <footer id="contact1" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <h3>¿Qué aprendió?</h3>
+                        <p id="preflex">Esta semana, he adquirido habilidades sólidas en JavaScript, que es fundamental para la programación front-end. Comprendí cómo se utilizan los diferentes tipos de datos y objetos en JavaScript, y cómo las funciones pueden hacer que mi código sea más eficiente y legible.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <h3>¿Cómo aprendió?</h3>
+                        <p id="preflex">La mayor parte de mi aprendizaje se produjo a través de la práctica, escribiendo y experimentando con código en JavaScript. También utilicé varios recursos en línea y libros para complementar mi aprendizaje y obtener una comprensión más profunda de los conceptos.</p>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Innovando</p>
+                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com/profile.php?id=100009930545573" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/poolrf2001/" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+51 912 528 990</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>pwrf2001@gmail.com</p>
+                </div>
+                <a href="https://wa.me/912528990"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <h3>Conocimientos</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>REACT</p>
+                <P>JavaScript</P>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
+</html>

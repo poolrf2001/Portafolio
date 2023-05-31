@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../primeflex.css">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/hyperspace-race-variable#fonts-section">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="../assets/Logo-oficial.png" alt="Logo portafolio" width="100" height="100">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Semana 1</li>
+                    <li onclick="scrollToSection('about2')">Definiciones</li>
+                    <li onclick="scrollToSection('services')">Actividades</li>
+                    <li onclick="scrollToSection('contact1')">Reflexión</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="../index.html#portafolio" aria-label="Enviar mensaje al correo"
+                    class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Portafolio</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl" id="tit1">Fundamentos de las tecnologías web, front-end, back-end, Mockups / UX Design</h1>
+                    <p class="text-gray-500">Durante esta semana, adquirí conocimientos fundamentales en una variedad de aspectos de las tecnologías web. 
+                        Exploré los componentes básicos de las aplicaciones de Internet, estudiando cómo funcionan y cómo se comunican entre sí. 
+                        Además, comprendí los conceptos fundamentales sobre front-end y back-end. En el lado de desarrollo web comprendí como nos permiten crear interfaces de usuario interactivas y atractivas.
+                        Mientras que en el lado del desarrollo back-end, comprendí el papel fundamental de los servidores, 
+                        las bases de datos y las aplicaciones para proporcionar funcionalidad y gestionar los datos de las aplicaciones de Internet. </p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p id="aprend">Conceptos clave: Fundamentos web, front-end,back-end</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="../assets/Fundamentos.jpeg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <!--ABOUT ME-->
+        <section id="about2" class="about__me2 w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="../assets/Aplicaciones.jpeg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Definiciones</h1>
+                    <p class="text-gray-500">Algunas de las definiciones de los temas que se abarcaron en la primera semana fueron los siguientes:</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Tecnologías web: Son todas aquellas herramientas y técnicas que permiten el desarrollo de sitios web y aplicaciones para Internet.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Desarrollo Front-end: Se refiere a la parte de la programación que involucra la interacción directa con el usuario. Usualmente involucra HTML, CSS y JavaScript.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Desarrollo Back-end: Es la parte de la programación que se encarga de que todo funcione detrás de escena. Este puede incluir el trabajo con servidores, bases de datos y aplicaciones.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Mockups / UX Design: Un mockup es un modelo a escala o tamaño completo de un diseño o dispositivo, utilizado para enseñar, demostrar, diseñar y evaluar. UX Design se refiere al proceso de crear productos que proporcionen experiencias significativas y relevantes para los usuarios.</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </div>
+    <!--Introducción -->
+    <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">ACTIVIDADES DESARROLLADAS</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    En esta sección identificaremos los procedimientos y resultados que obtuvimos
+
+                    Esta semana, revisé todos los fundamentos del desarrollo web, vi como está compuesto un sitio web. En el lado del front-end, vi algunas de las herramientas que se usan como HTML para estructurar el contenido, CSS para el estilo y JavaScript para añadir interactividad.
+
+                    En el back-end, conocí que Node.js sive para gestionar las solicitudes y respuestas del servidor y MongoDB funciona como base de datos. Como resultado, logré comprender la manera en que estos conceptos se relacionan y sirven de mucha ayuda al momento de tener que adentrarse cada vez más a este maravilloso mundo del desarrollo web.
+
+                </p>
+            </div>
+            <div class="services__card w-full align-items-center grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 md:col-6 gap-3 p-2"  id="card">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Back-end & Front-end</p>
+                    </div>
+
+                </div>
+                <div class=""  id="card">                    
+                    <div class="image col p-0 mt-6 md:mt-0">
+                        <img src="../assets/FrontBack.jpeg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 md:col-6 gap-3 p-2"  id="card">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Desarrollo web</p>
+                    </div>
+                </div>
+                <div class=""  id="card">   
+                    <div class="image col p-0 mt-6 md:mt-0">
+                        <img src="../assets/dw1.jpeg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <footer id="contact1" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <h3>¿Qué aprendió?</h3>
+                        <p id="preflex">He aprendido mucho sobre los conceptos de tecnologías web y el desarrollo de aplicaciones para Internet. Comprendí las diferencias y la interdependencia entre el desarrollo front-end y back-end, 
+                            y cómo cada uno contribuye a la creación de aplicaciones de Internet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <h3>¿Cómo aprendió?</h3>
+                        <p id="preflex">Mi aprendizaje fue una combinación de teoría y práctica.
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Innovando</p>
+                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com/profile.php?id=100009930545573" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/poolrf2001/" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+51 912 528 990</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>pwrf2001@gmail.com</p>
+                </div>
+                <a href="https://wa.me/912528990"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <h3>Conocimientos</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>REACT</p>
+                <P>JavaScript</P>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
+</html>
