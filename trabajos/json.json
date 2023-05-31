@@ -1,0 +1,39 @@
+[
+    {
+      "nombre": "Samsung Galaxy A53 5G",
+      "precio": 960,
+      "descripción": "CELULAR SAMSUNG GALAXY A53 6.5 128GB 6GB",
+      "foto": "https://home.ripley.com.pe/Attachment/WOP_5/2065291029459/2065291029459_2.jpg"
+    },
+    {
+      "nombre": "Samsung Galaxy S23 Ultra",
+      "precio": 5999,
+      "descripción": "Samsung Galaxy Z Flip 3 8GB 256GB 6.7 - negro",
+      "foto": "https://images.samsung.com/is/image/samsung/p6pim/pe/2302/gallery/pe-galaxy-s23-s918-446732-sm-s918bzgoltp-thumb-535135961?imwidth=480"
+    },
+    {
+      "nombre": "Samsung Galaxy S23 plus",
+      "precio": 4950,
+      "descripción": "Descripción del producto 3",
+      "foto": "https://images.samsung.com/pe/smartphones/galaxy-s23/images/galaxy-s23-highlights-color-back-lavender.jpg"
+    },
+    {
+      "nombre": "Samsung Galaxy A33 5G",
+      "precio": 860,
+      "descripción": "Descripción del producto 4",
+      "foto": "https://images.samsung.com/is/image/samsung/p6pim/pe/sm-a145mzkeltp/gallery/pe-galaxy-a14-sm-a145-sm-a145mzkeltp-thumb-536139041?$172_172_PNG$"
+    },
+    {
+      "nombre": "Samsung Galaxy Zflip 3",
+      "precio": 3999,
+      "descripción": "Descripción del producto 5",
+      "foto": "https://images.samsung.com/is/image/samsung/p6pim/pe/sm-f721blvjltp/gallery/pe-galaxy-z-flip4-f721-sm-f721blvjltp-thumb-534313109?$172_172_PNG$"
+    },
+    {
+      "nombre": "Samsung Galaxy Zfold 4",
+      "precio": 6999,
+      "descripción": "Descripción del producto 6",
+      "foto": "https://images.samsung.com/is/image/samsung/p6pim/pe/sm-f936bzkmltp/gallery/pe-galaxy-z-fold4-f936-430017-sm-f936bzkmltp-thumb-533623731?$172_172_PNG$"
+    }
+  ]
+  

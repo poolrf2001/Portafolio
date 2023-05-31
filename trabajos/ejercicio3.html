@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de productos</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <table id="tablaProductos">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Descripción</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Realizar la solicitud con fetch y leer los datos JSON
+    fetch('json.json')
+      .then(response => {
+        if (response.ok) {
+            console.log('Ok');
+          return response.json();
+        } else {
+          throw new Error('Error al leer los datos JSON.');
+        }
+      })
+      .then(data => {
+        // Construir las filas de la tabla con los datos
+        const tbody = document.querySelector('#tablaProductos tbody');
+        data.forEach(producto => {
+          const fila = document.createElement('tr');
+          fila.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td>${producto.descripción}</td>
+            <td><img src="${producto.foto}" alt="${producto.nombre}" width="100"></td>
+          `;
+          tbody.appendChild(fila);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html
